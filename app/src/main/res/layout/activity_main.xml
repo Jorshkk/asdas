@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="44dp"
+        android:src="@drawable/logo2"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:hint="@string/app_txtEmail_loign"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <EditText
+        android:inputType="text"
+        android:id="@+id/edt_loginMail"
+        style="@style/appTheme.edt"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        android:drawableStart="@drawable/app_email"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/aqua"
+        android:hint="@string/app_txtEmail_loign"/>
+
+    <EditText
+        android:inputType="textPassword"
+        style="@style/appTheme.edt"
+        android:id="@+id/edt_loginPassword"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_loginMail"
+        android:drawableStart="@drawable/app_password_icon"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/aqua"
+        android:hint="@string/app_txtPassword_login"
+        />
+
+    <TextView
+        android:id="@+id/twcrearCuenta"
+        style="@style/appTheme.twCrearCuenta"
+        android:onClick="mainRegistro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.796"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login"
+        app:layout_constraintVertical_bias="0.727" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="48dp"
+        android:fontFamily="casual"
+        android:text="@string/app_noCount"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login"
+        app:layout_constraintVertical_bias="0.609" />
+
+    <Button
+        android:text="@string/app_btnIngresar_login"
+        android:onClick="goHome"
+        android:id="@+id/btn_login"
+        style="@style/appTheme.btnLogin"
+        android:layout_marginTop="56dp"
+        android:background="@color/aqua"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_loginPassword" />
+</androidx.constraintlayout.widget.ConstraintLayout>

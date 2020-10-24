@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Prueba</string>
+    <string name="app_txtNombre_regis">Nombre</string>
+    <string name="app_txtEmail_loign">Email</string>
+    <string name="app_txtPassword_login">Contraseña</string>
+    <string name="app_txt_password2">Reingresar contrañesa</string>
+    <string name="app_creaCuenta_login">crea Cuenta</string>
+    <string name="app_btnIngresar_login">Ingresar</string>
+    <string name="app_btnRegistrar_regis">Registrar</string>
+    <string name="app_back">Regresar</string>
+    <string name="app_buscar">Buscar</string>
+    <string name="app_noCount">No tienes Cuentas?</string>
+</resources>
